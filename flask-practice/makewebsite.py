@@ -27,5 +27,10 @@ def admin2():
 def html_page():
     return render_template("index.html")
 
+# Including the dynamic html file - JINJA
+@app.route("/jinja/<name>")
+def jinja_page(name):
+    return render_template("jinja.html", content=name, names_list = ["Pravith", "Ranjith", "Bobby"])
+
 if __name__ == "__main__":
     app.run()

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dynamic Page
+        </title>
+    </head>
+        <h1>Pravith Flask Practice</h1>
+        <p>The dynamic page with parameters: {{ content }}</p>
+
+        <p>The for loop example:</p>
+        <ul>
+            {% for x in range(10) %}
+                {% if x % 2 == 0 %}
+                    <li>{{ x }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        <p> Passing the list of names from the Python code:</p>
+        <ul>
+            {% for name in names_list %}
+                <li>{{ name }}</li>
+            {% endfor %}
+        </ul>
+    <body>
+
+    </body>
+</html>
