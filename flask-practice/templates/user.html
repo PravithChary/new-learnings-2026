@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}User Page{% endblock %}
+
+{% block content %}
+    <!-- 
+        get_flashed_messages() is a Flask built-in function that retrieves all flashed messages 
+        from the session. Flashed messages are one-time notifications stored on the server that 
+        are displayed to the user and automatically removed after being accessed. This is commonly 
+        used to show success messages, error alerts, or other user feedback after form submissions 
+        or redirects. The messages are passed to the template context via the 'messages' variable 
+        for rendering in the HTML.
+    -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <p>Welcome {{ user }}!</p>
+{% endblock %}
