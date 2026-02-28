@@ -1,9 +1,11 @@
 from flask import Flask, url_for, redirect, render_template, request, session, flash
 from datetime import timedelta
+from second import second
 
 app = Flask(__name__)
 app.secret_key = "hello"
 app.permanent_session_lifetime = timedelta(minutes=5) # Session will expire in 5 minutes
+app.register_blueprint(second, url_prefix="/second")
 
 # Basic Home page
 @app.route("/")
