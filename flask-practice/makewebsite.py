@@ -47,6 +47,8 @@ def login():
         session["user"] = user
         return redirect(url_for("user"))
     else:
+        if "user" in session:
+            return redirect(url_for("user"))
         return render_template("login.html")
 
 # Session - if user doesn't exist, it redirects to the login page
@@ -57,6 +59,12 @@ def user():
         return f"Hello {user}!"
     else:
         return redirect(url_for("login"))
+
+# Logout
+@app.route("/logout")
+def logout():
+    session.pop("user", None) # None - default value so that error is not thrown if "user" doesn't exist
+    return redirect(url_for("login"))
 
 if __name__ == "__main__":
     app.run(debug=True) # debug=True makes the app reload automatically when changes are made to the code
