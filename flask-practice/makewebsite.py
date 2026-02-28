@@ -32,5 +32,9 @@ def html_page():
 def jinja_page(name):
     return render_template("jinja.html", content=name, names_list = ["Pravith", "Ranjith", "Bobby"])
 
+@app.route("/template-inheritance")
+def template_inheritance():
+    return render_template("template-inheritance.html")
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True) # debug=True makes the app reload automatically when changes are made to the code
