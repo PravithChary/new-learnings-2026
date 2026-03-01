@@ -10,5 +10,15 @@ Source Code [GitHub](https://github.com/jod35/Flask-React-Recipes)
 
 ## Within the python interpreter,
 
-`import secrets`\
-`secrets.token_hex(12)`
+`>>> import secrets`\
+`>>> secrets.token_hex(12)`
+
+## Commands to run for db setup
+
+`python3 -m export FLASK_APP=main.py`\
+`python3 -m flask shell`
+
+An interpreter opens now,\
+`>>> db`\
+`>>> Recipe`\
+`>>> db.create_all()`
