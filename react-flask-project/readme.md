@@ -22,3 +22,7 @@ An interpreter opens now,\
 `>>> db`\
 `>>> Recipe`\
 `>>> db.create_all()`
+
+## Commands to add requirements file
+
+`pip freeze > requirements.py`
