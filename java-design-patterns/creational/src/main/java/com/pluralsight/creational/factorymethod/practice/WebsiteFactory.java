@@ -1,10 +1,10 @@
 package com.pluralsight.creational.factorymethod.practice;
 
 public class WebsiteFactory {
-    public static Website getWebsite(String siteType) {
+    public static Website getWebsite(WebsiteType siteType) {
         return switch (siteType) {
-            case "blog" -> new Blog();
-            case "shop" -> new Shop();
+            case BLOG -> new Blog();
+            case SHOP -> new Shop();
             default -> null;
         };
     }

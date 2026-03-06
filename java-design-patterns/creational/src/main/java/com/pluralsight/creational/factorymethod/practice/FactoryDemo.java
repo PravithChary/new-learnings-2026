@@ -2,10 +2,10 @@ package com.pluralsight.creational.factorymethod.practice;
 
 public class FactoryDemo {
     public static void main(String[] args) {
-        Website site = WebsiteFactory.getWebsite("blog");
+        Website site = WebsiteFactory.getWebsite(WebsiteType.BLOG);
         System.out.println(site.getPages());
 
-        site = WebsiteFactory.getWebsite("shop");
+        site = WebsiteFactory.getWebsite(WebsiteType.SHOP);
         System.out.println(site.getPages());
     }
 }
