@@ -16,12 +16,18 @@ public class Statement implements Cloneable{
     // clone() method has to be implemented because the object is implementing Cloneable interface
     public Statement clone() {
         try {
-            // this is shallow copy -> i.e. copies the references also
-            return (Statement) super.clone(); // calling the parent clone method
+            // this is deep copy -> i.e. copies only the parameters but not the references of the instance
+            Statement cloned = (Statement) super.clone(); // calling the parent clone method;
+            cloned.setRecord(this.record.clone());
+            return cloned;
         } catch(CloneNotSupportedException e) {
             e.printStackTrace();
         }
         return null;
+    }
+
+    private void setRecord(Record record) {
+        this.record = record;
     }
 
     public String getSql() {
