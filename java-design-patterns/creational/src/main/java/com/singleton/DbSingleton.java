@@ -1,8 +1,11 @@
 package main.java.com.singleton;
 
 public class DbSingleton {
-    // This has to be private instance
-    private static DbSingleton instance = new DbSingleton();
+    // Lazy loading and thread safety
+    // not creating the instance until the object is called
+    private static class LazyHolder {
+        static final DbSingleton INSTANCE = new DbSingleton();
+    }
 
     // Constructor has to be private
     private DbSingleton() {
@@ -10,7 +13,7 @@ public class DbSingleton {
     }
 
     public static DbSingleton getInstance() {
-        return instance;
+        return LazyHolder.INSTANCE;
     }
 
 }
