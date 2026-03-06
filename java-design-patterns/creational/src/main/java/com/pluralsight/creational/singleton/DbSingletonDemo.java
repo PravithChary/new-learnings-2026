@@ -1,16 +1,24 @@
 package com.pluralsight.creational.singleton;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 public class DbSingletonDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         DbSingleton instance = DbSingleton.getInstance();
         System.out.println(instance);
 
-        DbSingleton anotherInstance = DbSingleton.getInstance();
-        System.out.println(anotherInstance);
+        Connection conn = instance.getConnection();
+        Statement statement = conn.createStatement();
+        statement.execute("CREATE TABLE students(id INT PRIMARY KEY, name VARCHAR(65))");
+        System.out.println("Create table students");
 
-        if (instance == anotherInstance) {
-            System.out.println("They are the same instance!");
+        int rows = statement.executeUpdate("INSERT INTO students (id, name) VALUES (1, 'Pravit')");
+        if(rows > 0) {
+            System.out.println("Inserted a new row");
         }
-    }
+        conn.close();
+;    }
 
 }
