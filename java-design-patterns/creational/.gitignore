@@ -42,3 +42,10 @@ build/
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+/test/
+
+.mvn
+.gitattributes
+mvnw
+mvnw.cmd
+HELP.md

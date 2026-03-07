@@ -2,3 +2,10 @@
 *.pyc
 
 /.idea/
+/.mvn/
+/test/
+
+.gitattributes
+mvnw
+mvnw.cmd
+HELP.md
