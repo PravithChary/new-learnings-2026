@@ -1,7 +1,7 @@
 ## Reference:
 
 # Creational Patterns (5)
-Plural sight: [Bryan Hansen - Design Patterns in Java: Creational](https://app.pluralsight/com/ilx/video-courses/java-se-17-creational-design-patterns/course-overview)
+Plural sight: [Bryan Hansen - Design Patterns in Java: Creational](https://www.pluralsight.com/courses/java-se-17-creational-design-patterns)
 1. Singleton Pattern
 2. Builder Pattern
 3. Prototype Pattern
@@ -16,7 +16,7 @@ Plural sight: [Bryan Hansen - Design Patterns in Java: Creational](https://app.p
 | Adaptable to environment more easily | Built through Composition  |
 
 # Structural Patterns  (7)
-Plural sight: [Bryan Hansen - Java SE Deep Dive: Structural Design Patterns](https://app.pluralsight/com/ilx/video-courses/java-se-deep-dive-structural-design-patterns/course-overview)
+Plural sight: [Bryan Hansen - Java SE Deep Dive: Structural Design Patterns](https://www.pluralsight.com/courses/java-se-deep-dive-structural-design-patterns)
 1. Adapter Pattern
 2. Bridge Pattern
 3. Composite Pattern
@@ -26,7 +26,7 @@ Plural sight: [Bryan Hansen - Java SE Deep Dive: Structural Design Patterns](htt
 7. Proxy Pattern
 
 # Behavioral Patterns (11)
-Plural sight: [Bryan Hansen - Java SE Deep Dive: Behavioral Design Patterns](https://app.pluralsight/com/ilx/video-courses/java-se-deep-dive-behavioral-design-patterns/course-overview)
+Plural sight: [Bryan Hansen - Java SE Deep Dive: Behavioral Design Patterns](https://www.pluralsight.com/courses/java-se-deep-dive-behavioral-design-patterns)
 1. Chain of Responsibility Pattern
 2. Command Pattern
 3. Interpreter Pattern
