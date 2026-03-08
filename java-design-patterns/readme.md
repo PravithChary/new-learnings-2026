@@ -8,7 +8,7 @@ Plural sight: [Bryan Hansen - Design Patterns in Java: Creational](https://www.p
 4. Factory Pattern (also called Factory Method Pattern)
 5. Absolute Factory Pattern
 
-|               Factory                |      Abstract Factory      |
+|               **Factory**                |      **Abstract Factory**      |
 |:------------------------------------:|:--------------------------:|
 |      Returns Various instances       | Implemented with a Factory |
 |        Multiple constructors         |     Hides the Factory      |
@@ -38,3 +38,9 @@ Plural sight: [Bryan Hansen - Java SE Deep Dive: Behavioral Design Patterns](htt
 9. Strategy Pattern
 10. Template Pattern
 11. Visitor Pattern
+
+|      **State**      |          **Strategy**          |
+|:---------------:|:--------------------------:|
+| Interface based |      Interface based       |
+|   Transitions   | Algorithms are independent |
+| Class per State |    Class per Algorithm     |
